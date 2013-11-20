@@ -1,4 +1,3 @@
-
 public class BucketMethod {
 	
 	public static int[] new_index(int[][] buckets,int[][] buckets_new){
@@ -252,21 +251,6 @@ public class BucketMethod {
 	public static void print_buckets(boolean[] bucket){
 		for(boolean z : bucket) System.out.printf("%d, ",z?1:0);
 		System.out.printf("\n\n");
-	}
-	
-	public static int[][] show_bucket_union_chart(int[][] buckets){
-		int[][] chart= new int[buckets.length][];
-		System.out.println("    0  1  2  3  4  5  6  7  8");
-		for(int y=0;y<buckets.length;y++){
-			chart[y] = new int[y+1];
-			System.out.printf("%2d:",y);
-			for(int x=0;x<=y;x++){				
-				chart[y][x]=bucket_union_counter(buckets[y],buckets[x]);
-				System.out.printf("%2d ",chart[y][x]);
-			}
-			System.out.println("");
-		}
-		return chart;
 	}
 	
 }
