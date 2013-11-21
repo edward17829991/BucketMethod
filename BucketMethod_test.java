@@ -1,4 +1,3 @@
-
 public class BucketMethod_test {
 
 	public static void main(String[] args) {		
@@ -13,10 +12,12 @@ public class BucketMethod_test {
 				{1,5,6},
 				{1,5,7}	};
 		
-		System.out.printf("direct mapping:\n");
+		
 		BucketMethod Bucket = new BucketMethod();		
 		
+		System.out.printf("direct mapping:\n");
 		BucketMethod.print_buckets(buckets);
+		
 		System.out.printf("new mapping:\n");
 		int[][] new_mapping = Bucket.new_mapping(buckets);
 		BucketMethod.print_buckets(new_mapping);
